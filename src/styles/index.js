@@ -8,10 +8,13 @@ export const color = {
   transparent: "rgba(0,0,0,0)",
   white: "#ffffff",
   black: "#000000",
+  darkCyan: "#00332c",
+  limeGreen: "#0a5c36",
+  green: "#6c7c59",
 };
 
 export const shadow = {
-  thin: "rgba(0, 0, 0, 0.04) 0px 4px 6px -1px,rgba(0, 0, 0, 0.04) 0px 2px 4px -1px", // box
-  soft: "rgba(0, 0, 0, 0.04) 0px 4px 12px", // usually on header
-  medium: "0 4px 8px rgba(0, 0, 0, 0.2)", // hover
+  thin: "rgba(0, 0, 0, 0.04) 0px 4px 6px -1px,rgba(0, 0, 0, 0.04) 0px 2px 4px -1px",
+  soft: "rgba(0, 0, 0, 0.04) 0px 4px 12px",
+  medium: "0 4px 8px rgba(0, 0, 0, 0.2)",
 };
