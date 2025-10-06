@@ -1,9 +1,10 @@
 import "../src/styles/global.css";
+import GamePage from "./pages/game-page";
 
 function App() {
   return (
     <>
-      <h1>Hello World</h1>
+      <GamePage />
     </>
   );
 }
