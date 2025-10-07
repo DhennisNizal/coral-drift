@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
+  base: "/coral-drift/", // must match your GitHub repo name
   plugins: [
     react(),
     VitePWA({
@@ -15,15 +16,16 @@ export default defineConfig({
         theme_color: "#00aaff",
         background_color: "#ffffff",
         display: "standalone",
-        start_url: "/",
+        scope: "/coral-drift/",
+        start_url: "/coral-drift/",
         icons: [
           {
-            src: "/logo.png",
+            src: "logo.png",
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "/logo.png",
+            src: "logo.png",
             sizes: "512x512",
             type: "image/png",
           },

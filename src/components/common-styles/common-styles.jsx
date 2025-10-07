@@ -5,7 +5,7 @@ import { color } from "../../styles";
 export const GameContainer = styled.div`
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 80dvh;
   overflow: hidden;
   background-image: url(${BackgroundIMG});
   background-size: cover;
@@ -14,7 +14,6 @@ export const GameContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 
   .game-over {
     position: absolute;
@@ -40,6 +39,6 @@ export const Score = styled.div`
 export const Bottom = styled.img`
   display: block;
   width: 100vw;
-  height: 20vh;
+  height: 20dvh;
   object-fit: cover;
 `;
