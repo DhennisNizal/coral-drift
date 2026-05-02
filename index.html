@@ -1,11 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>coral-drift</title>
+
+    <!-- App Title and Description -->
+    <title>Coral Drift</title>
+    <meta name="title" content="Coral Drift" />
+    <meta
+      name="description"
+      content="Coral Drift is an ocean-themed Flappy Bird-inspired game. Tap to swim, dodge coral reefs, and enjoy the underwater adventure!"
+    />
+
+    <!-- PWA Primary Meta Tags -->
+    <meta name="theme-color" content="#00aaff" />
+    <link rel="manifest" href="/coral-drift/manifest.webmanifest" />
+
+    <!-- Apple iOS Support -->
+    <link rel="apple-touch-icon" href="/logo.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Coral Drift" />
+
+    <!-- Open Graph / Social Preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="Coral Drift" />
+    <meta
+      property="og:description"
+      content="An ocean-themed Flappy Bird-inspired game made with React and Vite. Swim through the coral and beat your high score!"
+    />
+    <meta property="og:image" content="/logo.png" />
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>

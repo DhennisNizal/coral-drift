@@ -1,7 +1,36 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc";
+import { VitePWA } from "vite-plugin-pwa";
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
-})
+  base: "/coral-drift/", // must match your GitHub repo name
+  plugins: [
+    react(),
+    VitePWA({
+      registerType: "autoUpdate",
+      includeAssets: ["logo.png"],
+      manifest: {
+        name: "Coral Drift",
+        short_name: "CoralDrift",
+        description: "An ocean-themed Flappy Bird game.",
+        theme_color: "#00aaff",
+        background_color: "#ffffff",
+        display: "standalone",
+        scope: "/coral-drift/",
+        start_url: "/coral-drift/",
+        icons: [
+          {
+            src: "logo.png",
+            sizes: "192x192",
+            type: "image/png",
+          },
+          {
+            src: "logo.png",
+            sizes: "512x512",
+            type: "image/png",
+          },
+        ],
+      },
+    }),
+  ],
+});
